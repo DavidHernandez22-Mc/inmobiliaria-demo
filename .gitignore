@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# fotos originales descargadas por scripts/build-images.mjs
+/.cache
+/.taste-skill

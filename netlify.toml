@@ -1,0 +1,19 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # Cambia este valor por tu número en formato internacional, solo dígitos (ej. 573001234567).
+  # También puedes definirlo en Netlify: Site settings → Environment variables.
+  # NEXT_PUBLIC_WHATSAPP_NUMBER = "573001234567"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Altamira Propiedades · demo de sitio inmobiliario
 
-## Getting Started
+Sitio de demostración de una inmobiliaria ficticia en Bogotá (Chicó, Rosales, Usaquén, Cedritos, Chapinero Alto y Salitre), hecho para un portafolio de diseño web.
 
-First, run the development server:
+**URL:** https://inmobiliariademo1.netlify.app
+
+## Qué incluye
+
+- Buscador con filtros (venta/arriendo, barrio, precio, habitaciones, baños, parqueaderos, área) y orden por precio o área. Los resultados se actualizan al instante.
+- 14 inmuebles ficticios con datos de referencia de Bogotá 2026 y una ficha por inmueble: galería, características, mapa de la zona (sin dirección exacta) y botón «Me interesa» que abre WhatsApp con el código, el título y el precio.
+- Calculadora de crédito hipotecario (cuota inicial mínima del 30 %, plazo y tasa E.A. editable).
+- Formulario de captación para propietarios que se envía por WhatsApp.
+- Versión en inglés (`/en/`) con precios aproximados en USD.
+- SEO: títulos, meta description, Open Graph, hreflang, sitemap, robots y datos estructurados (schema.org).
+
+## Desarrollo
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Publicación en Netlify
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Build command: `npm run build`
+- Publish directory: `out`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Configuración
 
-## Learn More
+- **Número de WhatsApp:** define la variable de entorno `NEXT_PUBLIC_WHATSAPP_NUMBER` (solo dígitos, con indicativo: `573001234567`) en Netlify o en un archivo `.env.local`. Si no existe, se usa `TU_NUMERO` (ver `lib/config.ts`).
+- **TRM de referencia:** `lib/config.ts`.
+- **Inmuebles:** `lib/properties.ts`. **Barrios:** `lib/barrios.ts`. **Textos ES/EN:** `lib/i18n.ts`.
 
-To learn more about Next.js, take a look at the following resources:
+## Fotos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Fotos de referencia de Wikimedia Commons con licencias libres (CC0, CC BY, CC BY-SA). No muestran los inmuebles anunciados. Los créditos completos están en el pie de página del sitio y en `data/credits.json`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Para volver a descargar las fotos y regenerar las versiones webp (480, 800, 1200 y 1800 px):
 
-## Deploy on Vercel
+```bash
+node scripts/build-images.mjs
+node scripts/build-og.mjs
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Aviso
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Marca, inmuebles, precios y testimonios son ficticios. No se ofrece ningún servicio real ni se afirma ningún registro, licencia o afiliación.
+
+Tipografías: Erode y General Sans (Indian Type Foundry, vía Fontshare, ITF Free Font License).

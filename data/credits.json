@@ -1,0 +1,226 @@
+{
+  "cerros": {
+    "title": "Cerros de Bogotá desde La Castellana",
+    "author": "Felipe Restrepo Acosta",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cerros_de_Bogot%C3%A1_desde_La_Castellana.JPG",
+    "ratio": 1.687
+  },
+  "usaquen": {
+    "title": "Panorámica de Usaquen, Bogotá D.C",
+    "author": "Alejandro Turola",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Panor%C3%A1mica_de_Usaquen,_Bogot%C3%A1_D.C.jpg",
+    "ratio": 1.5
+  },
+  "chico": {
+    "title": "Bogotá - El Chicó cl 93 cr 10",
+    "author": "Felipe Restrepo Acosta",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bogot%C3%A1_-_El_Chic%C3%B3_cl_93_cr_10.JPG",
+    "ratio": 1.333
+  },
+  "parque93": {
+    "title": "Bogotá Parque de la 93",
+    "author": "Felipe Restrepo Acosta",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bogot%C3%A1_Parque_de_la_93.JPG",
+    "ratio": 1.333
+  },
+  "chapinero": {
+    "title": "2019 Bogotá - Edificio LEbreles en Chapinero - Calle 69 con carrera 9 A",
+    "author": "Felipe Restrepo Acosta",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:2019_Bogot%C3%A1_-_Edificio_LEbreles_en_Chapinero_-_Calle_69_con_carrera_9_A.jpg",
+    "ratio": 1.332
+  },
+  "salitre": {
+    "title": "Bogotá carrera 68 b con calle 25 Ciudad Salitre Occidental Fontibón",
+    "author": "Felipe Restrepo Acosta",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bogot%C3%A1_carrera_68_b_con_calle_25_Ciudad_Salitre_Occidental_Fontib%C3%B3n.JPG",
+    "ratio": 1.367
+  },
+  "cedritos": {
+    "title": "Barrio Cedritos de Bogotá abr 2018 ",
+    "author": "EEIM",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Barrio_Cedritos_de_Bogot%C3%A1_abr_2018_.jpg",
+    "ratio": 1.808
+  },
+  "rosales": {
+    "title": "Bogota - arboles parque Rosales, avenida Circunvalar",
+    "author": "Felipe Restrepo Acosta",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bogota_-_arboles_parque_Rosales,_avenida_Circunvalar.JPG",
+    "ratio": 1.333
+  },
+  "chico-norte": {
+    "title": "Barrio El Chicó edificio en cl 92 cr 9 A",
+    "author": "Felipe Restrepo Acosta",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Barrio_El_Chic%C3%B3_edificio_en_cl_92_cr_9_A.JPG",
+    "ratio": 1.333
+  },
+  "sala-1": {
+    "title": "Living room in apartment of Condomínio do Edifício Zaher, Le Blond, Rio de Janeiro, Brazil",
+    "author": "Wilfredor",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Living_room_in_apartment_of_Condom%C3%ADnio_do_Edif%C3%ADcio_Zaher,_Le_Blond,_Rio_de_Janeiro,_Brazil.jpg",
+    "ratio": 1.838
+  },
+  "sala-2": {
+    "title": "Lounge, Interior of apartment in Brisbane, 2025,",
+    "author": "Chris Olszewski",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lounge,_Interior_of_apartment_in_Brisbane,_2025,.jpg",
+    "ratio": 1.335
+  },
+  "comedor-1": {
+    "title": "Dinning, Interior of apartment in Brisbane, 2025, 04",
+    "author": "Chris Olszewski",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dinning,_Interior_of_apartment_in_Brisbane,_2025,_04.jpg",
+    "ratio": 1.333
+  },
+  "cocina-1": {
+    "title": "Kitchen, Interior of apartment in Brisbane, 2025, 03",
+    "author": "Chris Olszewski",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kitchen,_Interior_of_apartment_in_Brisbane,_2025,_03.jpg",
+    "ratio": 1.333
+  },
+  "alcoba-1": {
+    "title": "Bedroom, Interior of apartment in Brisbane, 2025, 01",
+    "author": "Chris Olszewski",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bedroom,_Interior_of_apartment_in_Brisbane,_2025,_01.jpg",
+    "ratio": 1.333
+  },
+  "alcoba-2": {
+    "title": "Bedroom, Interior of apartment in Brisbane, 2025, 02",
+    "author": "Chris Olszewski",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bedroom,_Interior_of_apartment_in_Brisbane,_2025,_02.jpg",
+    "ratio": 1.333
+  },
+  "bano-1": {
+    "title": "Bathroom, Interior of apartment in Brisbane, 2025, 08",
+    "author": "Chris Olszewski",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bathroom,_Interior_of_apartment_in_Brisbane,_2025,_08.jpg",
+    "ratio": 1.333
+  },
+  "sala-3": {
+    "title": "Modern living room with stylish furniture and a view of the outdoors in a cozy apartment setting",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Modern_living_room_with_stylish_furniture_and_a_view_of_the_outdoors_in_a_cozy_apartment_setting.jpg",
+    "ratio": 1.498
+  },
+  "cocina-2": {
+    "title": "Modern luxury living room with kitchen interior",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Modern_luxury_living_room_with_kitchen_interior.jpg",
+    "ratio": 1.498
+  },
+  "cocina-3": {
+    "title": "Kitchen area with modern appliances and wooden cabinets",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kitchen_area_with_modern_appliances_and_wooden_cabinets.jpg",
+    "ratio": 1.498
+  },
+  "cocina-4": {
+    "title": "White modern kitchen",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:White_modern_kitchen.jpg",
+    "ratio": 1.51
+  },
+  "casa-1": {
+    "title": "Modern house view showing living room and outdoor patio area with sliding glass doors",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Modern_house_view_showing_living_room_and_outdoor_patio_area_with_sliding_glass_doors.jpg",
+    "ratio": 1.498
+  },
+  "sala-4": {
+    "title": "Modern living room with large windows showing view of trees and lake in daylight",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Modern_living_room_with_large_windows_showing_view_of_trees_and_lake_in_daylight.jpg",
+    "ratio": 1.498
+  },
+  "cocina-5": {
+    "title": "This modern kitchen showcases sleek white cabinetry and a clean design",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:This_modern_kitchen_showcases_sleek_white_cabinetry_and_a_clean_design.jpg",
+    "ratio": 1.5
+  },
+  "bano-2": {
+    "title": "Modern bathroom with wooden and glass parts",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Modern_bathroom_with_wooden_and_glass_parts.jpg",
+    "ratio": 1.498
+  },
+  "bano-3": {
+    "title": "Modern bathroom design with wooden accents and glass shower enclosure",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Modern_bathroom_design_with_wooden_accents_and_glass_shower_enclosure.jpg",
+    "ratio": 1.498
+  },
+  "sala-5": {
+    "title": "Living room (Unsplash)",
+    "author": "Jarosław Ceborski jarson",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Living_room_(Unsplash).jpg",
+    "ratio": 1.498
+  },
+  "alcoba-3": {
+    "title": "Bedroom in a serviced apartment in London",
+    "author": "Mx. Granger",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Bedroom_in_a_serviced_apartment_in_London.jpg",
+    "ratio": 1.333
+  },
+  "sala-6": {
+    "title": "Apartment Living Room 1 2018-09-28",
+    "author": "FASTILY",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Apartment_Living_Room_1_2018-09-28.jpg",
+    "ratio": 1.333
+  }
+}
