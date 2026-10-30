@@ -36,7 +36,7 @@ export function MortgageCalculator({
   const uid = useId();
   const [valueText, setValueText] = useState(formatNumber(initialValue, lang));
   const [down, setDown] = useState(MIN_DOWN);
-  const [years, setYears] = useState(20);
+  const [years, setYears] = useState(15);
   const [rateText, setRateText] = useState(lang === "es" ? "12,5" : "12.5");
 
   const value = digits(valueText);
@@ -144,28 +144,35 @@ export function MortgageCalculator({
       </form>
 
       <div className="calc__result" aria-live="polite">
-        <strong className="calc__monthly">{ready ? formatCOP(r.monthly, lang) : "—"}</strong>
-        <p className="calc__monthly-label">{d.monthly}</p>
-        <span className="calc__monthly-usd small">{ready ? `${formatUSD(r.monthly, lang)} · ${TRM_LABEL[lang]}` : ""}</span>
+        <div className="calc__hero">
+          <p className="calc__monthly-label">{d.monthly}</p>
+          <strong className="calc__monthly">{ready ? formatCOP(r.monthly, lang) : "…"}</strong>
+          <span className="calc__monthly-usd small">
+            {ready ? `${formatUSD(r.monthly, lang)} · ${d.yearsUnit(years)} · ${rateText} % E.A.` : d.errorValue}
+          </span>
+        </div>
+        <p className="calc__rows-title">{d.summary}</p>
         <dl className="calc__rows">
           <div className="calc__row">
             <dt>{d.loan}</dt>
-            <dd>{ready ? formatCOP(r.loan, lang) : "—"}</dd>
+            <dd>{ready ? formatCOP(r.loan, lang) : "…"}</dd>
           </div>
           <div className="calc__row">
             <dt>{d.interest}</dt>
-            <dd>{ready ? formatCOP(r.interest, lang) : "—"}</dd>
+            <dd>{ready ? formatCOP(r.interest, lang) : "…"}</dd>
           </div>
           <div className="calc__row">
             <dt>{d.total}</dt>
-            <dd>{ready ? formatCOP(r.total, lang) : "—"}</dd>
+            <dd>{ready ? formatCOP(r.total, lang) : "…"}</dd>
           </div>
           <div className="calc__row">
             <dt>{d.totalWithDown}</dt>
-            <dd>{ready ? formatCOP(r.total + r.downAmount, lang) : "—"}</dd>
+            <dd>{ready ? formatCOP(r.total + r.downAmount, lang) : "…"}</dd>
           </div>
         </dl>
-        <p className="calc__disclaimer small">{d.disclaimer}</p>
+        <p className="calc__disclaimer small">
+          {d.disclaimer} {TRM_LABEL[lang]}.
+        </p>
       </div>
     </div>
   );

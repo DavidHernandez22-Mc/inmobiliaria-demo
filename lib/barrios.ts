@@ -8,6 +8,8 @@ export interface Barrio {
   // Centro aproximado del barrio. El mapa muestra un área, nunca una dirección.
   center: [number, number];
   photo: string;
+  /** Precio promedio por m² de referencia (ficticio, solo para la demo): venta en COP y arriendo en COP/mes. */
+  refM2: { venta: number; arriendo: number };
   photoAlt: Record<Lang, string>;
   blurb: Record<Lang, string>;
 }
@@ -15,6 +17,7 @@ export interface Barrio {
 export const BARRIOS: Barrio[] = [
   {
     id: "chico",
+    refM2: { venta: 10_500_000, arriendo: 62_000 },
     name: "Chicó",
     center: [4.6772, -74.0485],
     photo: "chico",
@@ -29,6 +32,7 @@ export const BARRIOS: Barrio[] = [
   },
   {
     id: "rosales",
+    refM2: { venta: 11_800_000, arriendo: 66_000 },
     name: "Rosales",
     center: [4.6565, -74.0515],
     photo: "rosales",
@@ -43,6 +47,7 @@ export const BARRIOS: Barrio[] = [
   },
   {
     id: "usaquen",
+    refM2: { venta: 8_300_000, arriendo: 50_000 },
     name: "Usaquén",
     center: [4.6955, -74.0315],
     photo: "usaquen",
@@ -57,6 +62,7 @@ export const BARRIOS: Barrio[] = [
   },
   {
     id: "cedritos",
+    refM2: { venta: 6_400_000, arriendo: 40_000 },
     name: "Cedritos",
     center: [4.7228, -74.0425],
     photo: "cedritos",
@@ -68,6 +74,7 @@ export const BARRIOS: Barrio[] = [
   },
   {
     id: "chapinero-alto",
+    refM2: { venta: 9_000_000, arriendo: 60_000 },
     name: "Chapinero Alto",
     center: [4.6448, -74.0575],
     photo: "chapinero",
@@ -79,6 +86,7 @@ export const BARRIOS: Barrio[] = [
   },
   {
     id: "salitre",
+    refM2: { venta: 5_700_000, arriendo: 37_000 },
     name: "Salitre",
     center: [4.6515, -74.1035],
     photo: "salitre",

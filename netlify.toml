@@ -4,9 +4,7 @@
 
 [build.environment]
   NODE_VERSION = "22"
-  # Cambia este valor por tu número en formato internacional, solo dígitos (ej. 573001234567).
-  # También puedes definirlo en Netlify: Site settings → Environment variables.
-  # NEXT_PUBLIC_WHATSAPP_NUMBER = "573001234567"
+  # El número de WhatsApp está en lib/config.ts; se puede sobrescribir con NEXT_PUBLIC_WHATSAPP_NUMBER.
 
 [[headers]]
   for = "/img/*"

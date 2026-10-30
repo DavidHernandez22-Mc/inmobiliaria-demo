@@ -2,7 +2,7 @@
 
 Sitio de demostración de una inmobiliaria ficticia en Bogotá (Chicó, Rosales, Usaquén, Cedritos, Chapinero Alto y Salitre), hecho para un portafolio de diseño web.
 
-**URL:** https://inmobiliariademo1.netlify.app
+**URL:** https://inmobiliaria1david.netlify.app
 
 ## Qué incluye
 
@@ -27,7 +27,7 @@ npm run dev
 
 ## Configuración
 
-- **Número de WhatsApp:** define la variable de entorno `NEXT_PUBLIC_WHATSAPP_NUMBER` (solo dígitos, con indicativo: `573001234567`) en Netlify o en un archivo `.env.local`. Si no existe, se usa `TU_NUMERO` (ver `lib/config.ts`).
+- **Número de WhatsApp:** `lib/config.ts` (573008564773). Se puede sobrescribir con la variable de entorno `NEXT_PUBLIC_WHATSAPP_NUMBER`.
 - **TRM de referencia:** `lib/config.ts`.
 - **Inmuebles:** `lib/properties.ts`. **Barrios:** `lib/barrios.ts`. **Textos ES/EN:** `lib/i18n.ts`.
 

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { photoAlt, photoSrc } from "@/lib/photos";
 import { t, type Lang } from "@/lib/i18n";
-import { ArrowIcon } from "./Icons";
+import { QuickSearch } from "./QuickSearch";
 
 export function Hero({ lang }: { lang: Lang }) {
   const d = t(lang).hero;
@@ -16,30 +16,31 @@ export function Hero({ lang }: { lang: Lang }) {
         </span>
         <span className="hero__frame shutter">
           <Image
-            src={photoSrc("cerros")}
-            alt={photoAlt("cerros", lang)}
+            src={photoSrc("hero-bogota")}
+            alt={photoAlt("hero-bogota", lang)}
             fill
             priority
             fetchPriority="high"
-            sizes="(max-width: 700px) 100vw, 30vw"
+            sizes="(max-width: 700px) 40vw, 30vw"
           />
         </span>
         <span className="hero__word" aria-hidden="true">
           mira
         </span>
       </div>
-      <div className="hero__foot">
-        <p className="hero__caption small">{d.caption}</p>
-        <p className="hero__sentence">{d.sentence}</p>
-        <div className="hero__actions">
-          <a className="btn btn--primary" href="#inmuebles">
-            {d.primary} <ArrowIcon direction="down" />
-          </a>
-          <a className="btn btn--outline" href="#propietarios">
+      <div className="hero__body">
+        <div className="hero__intro">
+          <p className="hero__sentence">{d.sentence}</p>
+          <a className="btn btn--outline hero__secondary" href="#propietarios">
             {d.secondary}
           </a>
         </div>
+        <QuickSearch lang={lang} />
+        <a className="btn btn--outline hero__mobile-secondary" href="#propietarios">
+          {d.secondary}
+        </a>
       </div>
+      <p className="hero__caption small">{d.caption}</p>
     </section>
   );
 }

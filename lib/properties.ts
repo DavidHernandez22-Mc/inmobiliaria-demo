@@ -46,7 +46,7 @@ export const PROPERTIES: Property[] = [
     floor: 5,
     age: 12,
     admin: 1_480_000,
-    photos: ["sala-1", "cocina-2", "alcoba-1", "bano-1", "comedor-1"],
+    photos: ["sala-vista", "cocina-isla", "alcoba-lujo", "bano-1", "comedor-madera"],
     title: { es: "Apartamento con terraza en el Chicó", en: "Terrace apartment in El Chicó" },
     description: {
       es: "A dos cuadras del Parque de la 93. Sala comedor con chimenea que abre a una terraza de 24 m², estudio independiente y alcoba principal con vestier y baño completo. Edificio de ladrillo de cinco pisos con portería 24 horas y gimnasio.",
@@ -71,7 +71,7 @@ export const PROPERTIES: Property[] = [
     floor: 9,
     age: 18,
     admin: 3_200_000,
-    photos: ["sala-4", "cocina-5", "alcoba-3", "bano-2", "sala-2"],
+    photos: ["sala-4", "cocina-2", "alcoba-moderna", "bano-2", "comedor-cocina"],
     title: { es: "Penthouse con vista a los cerros", en: "Penthouse facing the hills" },
     description: {
       es: "Último piso en dos niveles con ventanales de piso a techo hacia los cerros orientales y la ciudad. Cocina abierta con isla, salón de estar familiar, cuatro alcobas con baño propio y terraza privada en el segundo nivel.",
@@ -96,7 +96,7 @@ export const PROPERTIES: Property[] = [
     floor: 3,
     age: 25,
     admin: 950_000,
-    photos: ["casa-1", "sala-3", "cocina-3", "alcoba-2", "bano-3"],
+    photos: ["casa-1", "sala-gris", "cocina-5", "alcoba-clara", "bano-3"],
     title: { es: "Casa en conjunto cerrado, Usaquén", en: "Gated townhouse in Usaquén" },
     description: {
       es: "Casa de tres niveles en conjunto de doce casas con vigilancia. Jardín privado, sala con doble altura, cocina abierta al comedor y alcoba principal con balcón. A diez minutos a pie de la plaza de Usaquén.",
@@ -121,7 +121,7 @@ export const PROPERTIES: Property[] = [
     floor: 7,
     age: 8,
     admin: 420_000,
-    photos: ["sala-5", "cocina-4", "alcoba-1", "bano-1"],
+    photos: ["sala-gris", "cocina-4", "alcoba-clara", "bano-1"],
     title: { es: "Apartamento familiar en Cedritos", en: "Family apartment in Cedritos" },
     description: {
       es: "Tres alcobas en 86 m² bien distribuidos, cocina integral cerrada y balcón hacia el occidente. Conjunto con parque infantil, salón comunal y piscina cubierta, cerca de colegios y de la avenida 19.",
@@ -146,7 +146,7 @@ export const PROPERTIES: Property[] = [
     floor: 11,
     age: 3,
     admin: 780_000,
-    photos: ["sala-2", "cocina-1", "alcoba-3", "bano-2"],
+    photos: ["cocina-2", "sala-vista", "alcoba-lujo", "bano-2"],
     title: { es: "Apartamento nuevo en Chapinero Alto", en: "New apartment in Chapinero Alto" },
     description: {
       es: "Edificio de 2023 en ladera, piso once con vista abierta a la sabana. Cocina abierta, dos alcobas con baño y balcón corrido. Terraza comunal con BBQ, coworking y gimnasio. A pasos de la Zona G.",
@@ -171,7 +171,7 @@ export const PROPERTIES: Property[] = [
     floor: 4,
     age: 15,
     admin: 390_000,
-    photos: ["sala-6", "cocina-4", "alcoba-2", "bano-3"],
+    photos: ["sala-5", "cocina-1", "alcoba-3", "bano-3"],
     title: { es: "Apartamento junto al parque, Salitre", en: "Apartment by the park, Salitre" },
     description: {
       es: "Conjunto cerrado frente a zona verde, a cinco minutos del parque Simón Bolívar y quince del aeropuerto. Sala comedor con buena luz, tres alcobas y cocina con zona de ropas independiente.",
@@ -196,7 +196,7 @@ export const PROPERTIES: Property[] = [
     floor: 3,
     age: 6,
     admin: 890_000,
-    photos: ["sala-3", "cocina-2", "alcoba-1", "bano-2", "comedor-1"],
+    photos: ["sala-2", "comedor-madera", "cocina-isla", "alcoba-moderna", "bano-2"],
     title: { es: "Apartamento con balcón en Usaquén", en: "Apartment with balcony in Usaquén" },
     description: {
       es: "Tercer piso en edificio boutique de seis apartamentos. Balcón hacia un jardín interior, sala con piso de madera, cocina abierta con mesón en cuarzo y alcoba principal con vestier.",
@@ -222,7 +222,7 @@ export const PROPERTIES: Property[] = [
     age: 4,
     admin: 410_000,
     furnished: true,
-    photos: ["alcoba-3", "sala-5", "cocina-1", "bano-1"],
+    photos: ["estudio-1", "cocina-1", "alcoba-hotel", "bano-1"],
     title: { es: "Apartaestudio para inversión, Chicó", en: "Investment studio in El Chicó" },
     description: {
       es: "Entregado amoblado y con historial de arriendo a ejecutivos. Planta abierta con cocina integral, alcoba separada por puerta corrediza y baño con ducha en vidrio. Ideal para inversionistas desde el exterior.",
@@ -247,7 +247,7 @@ export const PROPERTIES: Property[] = [
     floor: 6,
     age: 20,
     admin: 2_300_000,
-    photos: ["comedor-1", "sala-1", "cocina-5", "alcoba-2", "bano-3"],
+    photos: ["comedor-madera", "sala-4", "cocina-isla", "alcoba-lujo", "bano-3"],
     title: { es: "Apartamento amplio en Rosales", en: "Spacious apartment in Rosales" },
     description: {
       es: "220 m² en un piso por planta: ascensor que llega directo al apartamento, sala y comedor separados, estudio con biblioteca y tres alcobas con baño. Calle cerrada y arborizada cerca de la Circunvalar.",
@@ -273,7 +273,7 @@ export const PROPERTIES: Property[] = [
     age: 5,
     admin: 1_050_000,
     furnished: true,
-    photos: ["cocina-2", "sala-2", "alcoba-1", "bano-2"],
+    photos: ["alcoba-hotel", "sala-gris", "comedor-cocina", "bano-2"],
     title: { es: "Amoblado para ejecutivos, Chicó", en: "Furnished executive flat, El Chicó" },
     description: {
       es: "Totalmente amoblado y equipado: menaje, ropa de cama e internet de fibra. Piso diez con balcón, dos alcobas con baño y estudio. Contratos desde seis meses para empresas y expatriados.",
@@ -298,7 +298,7 @@ export const PROPERTIES: Property[] = [
     floor: 5,
     age: 10,
     admin: 340_000,
-    photos: ["cocina-4", "sala-6", "alcoba-2", "bano-1"],
+    photos: ["comedor-cocina", "sala-5", "alcoba-clara", "bano-1"],
     title: { es: "Apartamento de dos alcobas, Cedritos", en: "Two-bedroom flat in Cedritos" },
     description: {
       es: "Quinto piso exterior con balcón, cocina abierta y dos alcobas con baño. Conjunto con gimnasio y parque infantil, a una cuadra de la calle 140 y de rutas de transporte público.",
@@ -323,7 +323,7 @@ export const PROPERTIES: Property[] = [
     floor: 8,
     age: 7,
     admin: 620_000,
-    photos: ["cocina-3", "sala-4", "alcoba-3", "bano-2"],
+    photos: ["cocina-isla", "sala-vista", "alcoba-moderna", "bano-2"],
     title: { es: "Apartamento con vista, Chapinero Alto", en: "Apartment with a view, Chapinero Alto" },
     description: {
       es: "Ventanales hacia la ciudad desde la sala y la alcoba principal. Cocina en madera con barra, segunda alcoba que funciona como estudio y terraza comunal. Cerca de universidades y de la carrera Séptima.",
@@ -348,7 +348,7 @@ export const PROPERTIES: Property[] = [
     floor: 2,
     age: 30,
     admin: 0,
-    photos: ["cocina-5", "casa-1", "sala-1", "alcoba-1", "bano-3"],
+    photos: ["casa-2", "casa-1", "sala-2", "cocina-5", "alcoba-3", "bano-3"],
     title: { es: "Casa con jardín en Usaquén", en: "House with garden in Usaquén" },
     description: {
       es: "Casa independiente de dos niveles en calle residencial, con jardín al frente y patio trasero. Sala con chimenea, comedor para ocho personas, cuatro alcobas y estudio. Admite mascotas.",
@@ -373,7 +373,7 @@ export const PROPERTIES: Property[] = [
     floor: 9,
     age: 14,
     admin: 310_000,
-    photos: ["cocina-1", "sala-5", "alcoba-2", "bano-1"],
+    photos: ["cocina-5", "sala-5", "alcoba-3", "bano-1"],
     title: { es: "Apartamento cerca a El Dorado, Salitre", en: "Flat near El Dorado airport, Salitre" },
     description: {
       es: "Piso nueve con buena luz, tres alcobas y cocina abierta. A quince minutos del aeropuerto, junto a centros comerciales y a la avenida La Esperanza. Conjunto con piscina y vigilancia.",

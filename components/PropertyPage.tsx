@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { barrioById } from "@/lib/barrios";
-import { SITE_NAME, SITE_URL, TRM_LABEL, waLink } from "@/lib/config";
-import { formatCOP, formatUSD, interestMessage } from "@/lib/format";
+import { SITE_NAME, SITE_URL, TRM_LABEL } from "@/lib/config";
+import { formatCOP, formatUSD } from "@/lib/format";
 import { homePath, propertyPath, t, type Lang } from "@/lib/i18n";
 import { PROPERTIES, type Property } from "@/lib/properties";
 import { AreaMap } from "./AreaMap";
 import { Gallery } from "./Gallery";
-import { ArrowIcon, WhatsAppIcon } from "./Icons";
+import { ArrowIcon } from "./Icons";
+import { InterestLink, InterestProvider, VisitPicker } from "./Interest";
+import { PriceM2 } from "./PriceM2";
 import { JsonLd } from "./JsonLd";
 import { MortgageCalculator } from "./MortgageCalculator";
 import { ResultRow } from "./ResultRow";
@@ -17,7 +19,6 @@ export function PropertyPage({ p, lang }: { p: Property; lang: Lang }) {
   const barrio = barrioById(p.barrio);
   const isSale = p.operation === "venta";
   const priceLabel = `${formatCOP(p.price, lang)}${isSale ? "" : ` ${d.search.perMonth}`}`;
-  const wa = waLink(interestMessage(p));
   const similar = PROPERTIES.filter((x) => x.code !== p.code && x.operation === p.operation)
     .sort((a, b) => Number(b.barrio === p.barrio) - Number(a.barrio === p.barrio) || Math.abs(a.price - p.price) - Math.abs(b.price - p.price))
     .slice(0, 3);
@@ -33,7 +34,6 @@ export function PropertyPage({ p, lang }: { p: Property; lang: Lang }) {
     [dp.age, dp.ageUnit(p.age)],
     [dp.admin, p.admin ? formatCOP(p.admin, lang) : dp.adminNone],
   ];
-  if (isSale) facts.push([dp.pricePerM2, formatCOP(Math.round(p.price / p.area / 1000) * 1000, lang)]);
   if (p.furnished) facts.push([dp.furnished, dp.yes]);
 
   const url = `${SITE_URL}${propertyPath(lang, p.code)}`;
@@ -62,7 +62,7 @@ export function PropertyPage({ p, lang }: { p: Property; lang: Lang }) {
   };
 
   return (
-    <>
+    <InterestProvider>
       <JsonLd data={structured} />
       <nav className="prop-crumb" aria-label={dp.back}>
         <Link href={`${homePath(lang)}#inmuebles`} className="crumb">
@@ -110,6 +110,8 @@ export function PropertyPage({ p, lang }: { p: Property; lang: Lang }) {
             </dl>
           </section>
 
+          <PriceM2 p={p} lang={lang} />
+
           <section aria-labelledby="features-title" data-reveal>
             <h2 id="features-title" className="h-sub">
               {dp.features}
@@ -137,9 +139,8 @@ export function PropertyPage({ p, lang }: { p: Property; lang: Lang }) {
               <span className="small muted">
                 {isSale ? dp.price : dp.rent} · {formatUSD(p.price, lang)}
               </span>
-              <a className="btn btn--wa btn--block" href={wa} target="_blank" rel="noopener noreferrer">
-                <WhatsAppIcon /> {dp.interested}
-              </a>
+              <VisitPicker lang={lang} />
+              <InterestLink p={p} lang={lang} className="btn btn--wa btn--block" />
               <span className="small muted">{dp.interestedNote}</span>
             </div>
           </div>
@@ -165,10 +166,8 @@ export function PropertyPage({ p, lang }: { p: Property; lang: Lang }) {
 
       <div className="cta-bar">
         <strong>{priceLabel}</strong>
-        <a className="btn btn--wa" href={wa} target="_blank" rel="noopener noreferrer">
-          <WhatsAppIcon /> {dp.interested}
-        </a>
+        <InterestLink p={p} lang={lang} className="btn btn--wa" />
       </div>
-    </>
+    </InterestProvider>
   );
 }

@@ -1,11 +1,11 @@
 {
-  "cerros": {
-    "title": "Cerros de Bogotá desde La Castellana",
-    "author": "Felipe Restrepo Acosta",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Cerros_de_Bogot%C3%A1_desde_La_Castellana.JPG",
-    "ratio": 1.687
+  "hero-bogota": {
+    "title": "View of Easterh Hills, Bogotá",
+    "author": "Tisquesusa",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:View_of_Easterh_Hills,_Bogot%C3%A1.jpg",
+    "ratio": 3.333
   },
   "usaquen": {
     "title": "Panorámica de Usaquen, Bogotá D.C",
@@ -21,14 +21,6 @@
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "source": "https://commons.wikimedia.org/wiki/File:Bogot%C3%A1_-_El_Chic%C3%B3_cl_93_cr_10.JPG",
-    "ratio": 1.333
-  },
-  "parque93": {
-    "title": "Bogotá Parque de la 93",
-    "author": "Felipe Restrepo Acosta",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Bogot%C3%A1_Parque_de_la_93.JPG",
     "ratio": 1.333
   },
   "chapinero": {
@@ -63,108 +55,12 @@
     "source": "https://commons.wikimedia.org/wiki/File:Bogota_-_arboles_parque_Rosales,_avenida_Circunvalar.JPG",
     "ratio": 1.333
   },
-  "chico-norte": {
-    "title": "Barrio El Chicó edificio en cl 92 cr 9 A",
-    "author": "Felipe Restrepo Acosta",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Barrio_El_Chic%C3%B3_edificio_en_cl_92_cr_9_A.JPG",
-    "ratio": 1.333
-  },
-  "sala-1": {
-    "title": "Living room in apartment of Condomínio do Edifício Zaher, Le Blond, Rio de Janeiro, Brazil",
-    "author": "Wilfredor",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "source": "https://commons.wikimedia.org/wiki/File:Living_room_in_apartment_of_Condom%C3%ADnio_do_Edif%C3%ADcio_Zaher,_Le_Blond,_Rio_de_Janeiro,_Brazil.jpg",
-    "ratio": 1.838
-  },
-  "sala-2": {
-    "title": "Lounge, Interior of apartment in Brisbane, 2025,",
-    "author": "Chris Olszewski",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Lounge,_Interior_of_apartment_in_Brisbane,_2025,.jpg",
-    "ratio": 1.335
-  },
-  "comedor-1": {
-    "title": "Dinning, Interior of apartment in Brisbane, 2025, 04",
-    "author": "Chris Olszewski",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Dinning,_Interior_of_apartment_in_Brisbane,_2025,_04.jpg",
-    "ratio": 1.333
-  },
-  "cocina-1": {
-    "title": "Kitchen, Interior of apartment in Brisbane, 2025, 03",
-    "author": "Chris Olszewski",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Kitchen,_Interior_of_apartment_in_Brisbane,_2025,_03.jpg",
-    "ratio": 1.333
-  },
-  "alcoba-1": {
-    "title": "Bedroom, Interior of apartment in Brisbane, 2025, 01",
-    "author": "Chris Olszewski",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Bedroom,_Interior_of_apartment_in_Brisbane,_2025,_01.jpg",
-    "ratio": 1.333
-  },
-  "alcoba-2": {
-    "title": "Bedroom, Interior of apartment in Brisbane, 2025, 02",
-    "author": "Chris Olszewski",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Bedroom,_Interior_of_apartment_in_Brisbane,_2025,_02.jpg",
-    "ratio": 1.333
-  },
-  "bano-1": {
-    "title": "Bathroom, Interior of apartment in Brisbane, 2025, 08",
-    "author": "Chris Olszewski",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Bathroom,_Interior_of_apartment_in_Brisbane,_2025,_08.jpg",
-    "ratio": 1.333
-  },
-  "sala-3": {
-    "title": "Modern living room with stylish furniture and a view of the outdoors in a cozy apartment setting",
+  "sala-vista": {
+    "title": "Cozy living room with a view of the lake and trees in the background at midday",
     "author": "Shixart1985",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Modern_living_room_with_stylish_furniture_and_a_view_of_the_outdoors_in_a_cozy_apartment_setting.jpg",
-    "ratio": 1.498
-  },
-  "cocina-2": {
-    "title": "Modern luxury living room with kitchen interior",
-    "author": "Shixart1985",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Modern_luxury_living_room_with_kitchen_interior.jpg",
-    "ratio": 1.498
-  },
-  "cocina-3": {
-    "title": "Kitchen area with modern appliances and wooden cabinets",
-    "author": "Shixart1985",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Kitchen_area_with_modern_appliances_and_wooden_cabinets.jpg",
-    "ratio": 1.498
-  },
-  "cocina-4": {
-    "title": "White modern kitchen",
-    "author": "Shixart1985",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:White_modern_kitchen.jpg",
-    "ratio": 1.51
-  },
-  "casa-1": {
-    "title": "Modern house view showing living room and outdoor patio area with sliding glass doors",
-    "author": "Shixart1985",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Modern_house_view_showing_living_room_and_outdoor_patio_area_with_sliding_glass_doors.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cozy_living_room_with_a_view_of_the_lake_and_trees_in_the_background_at_midday.jpg",
     "ratio": 1.498
   },
   "sala-4": {
@@ -175,6 +71,54 @@
     "source": "https://commons.wikimedia.org/wiki/File:Modern_living_room_with_large_windows_showing_view_of_trees_and_lake_in_daylight.jpg",
     "ratio": 1.498
   },
+  "sala-gris": {
+    "title": "Cozy living room with a gray sofa",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cozy_living_room_with_a_gray_sofa.jpg",
+    "ratio": 1.503
+  },
+  "sala-2": {
+    "title": "Lounge, Interior of apartment in Brisbane, 2025,",
+    "author": "Chris Olszewski",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lounge,_Interior_of_apartment_in_Brisbane,_2025,.jpg",
+    "ratio": 1.335
+  },
+  "sala-5": {
+    "title": "Living room (Unsplash)",
+    "author": "Jarosław Ceborski jarson",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Living_room_(Unsplash).jpg",
+    "ratio": 1.498
+  },
+  "cocina-2": {
+    "title": "Modern luxury living room with kitchen interior",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Modern_luxury_living_room_with_kitchen_interior.jpg",
+    "ratio": 1.498
+  },
+  "cocina-isla": {
+    "title": "West London Kitchen Design",
+    "author": "Woodgraindesign",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:West_London_Kitchen_Design.jpg",
+    "ratio": 1.493
+  },
+  "cocina-4": {
+    "title": "White modern kitchen",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:White_modern_kitchen.jpg",
+    "ratio": 1.51
+  },
   "cocina-5": {
     "title": "This modern kitchen showcases sleek white cabinetry and a clean design",
     "author": "Shixart1985",
@@ -182,6 +126,78 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:This_modern_kitchen_showcases_sleek_white_cabinetry_and_a_clean_design.jpg",
     "ratio": 1.5
+  },
+  "cocina-1": {
+    "title": "Kitchen, Interior of apartment in Brisbane, 2025, 03",
+    "author": "Chris Olszewski",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kitchen,_Interior_of_apartment_in_Brisbane,_2025,_03.jpg",
+    "ratio": 1.333
+  },
+  "comedor-cocina": {
+    "title": "Modern kitchen and dining area in a bright apartment on a sunny day with simple decor and furniture",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Modern_kitchen_and_dining_area_in_a_bright_apartment_on_a_sunny_day_with_simple_decor_and_furniture.jpg",
+    "ratio": 1.498
+  },
+  "comedor-madera": {
+    "title": "Elegant dining area in a modern apartment with wooden accents and stylish decor",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Elegant_dining_area_in_a_modern_apartment_with_wooden_accents_and_stylish_decor.jpg",
+    "ratio": 1.498
+  },
+  "alcoba-lujo": {
+    "title": "Balanced Modern Bedroom Design with Neutral Tones and Layered Lighting",
+    "author": "SPL Interiors1",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Balanced_Modern_Bedroom_Design_with_Neutral_Tones_and_Layered_Lighting.jpg",
+    "ratio": 1.335
+  },
+  "alcoba-hotel": {
+    "title": "Hotel Flor Guest Room Double Queen",
+    "author": "Evolve&amp;Co",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hotel_Flor_Guest_Room_Double_Queen.jpg",
+    "ratio": 1.456
+  },
+  "alcoba-clara": {
+    "title": "Cozy bedroom with two beds window and wall art in a simple setting",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cozy_bedroom_with_two_beds_window_and_wall_art_in_a_simple_setting.jpg",
+    "ratio": 1.498
+  },
+  "alcoba-moderna": {
+    "title": "Modern bedroom design in a stylish hotel room featuring geometric patterns and soft linens",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Modern_bedroom_design_in_a_stylish_hotel_room_featuring_geometric_patterns_and_soft_linens.jpg",
+    "ratio": 1.498
+  },
+  "alcoba-3": {
+    "title": "Bedroom in a serviced apartment in London",
+    "author": "Mx. Granger",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Bedroom_in_a_serviced_apartment_in_London.jpg",
+    "ratio": 1.333
+  },
+  "bano-1": {
+    "title": "Bathroom, Interior of apartment in Brisbane, 2025, 08",
+    "author": "Chris Olszewski",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bathroom,_Interior_of_apartment_in_Brisbane,_2025,_08.jpg",
+    "ratio": 1.333
   },
   "bano-2": {
     "title": "Modern bathroom with wooden and glass parts",
@@ -199,28 +215,28 @@
     "source": "https://commons.wikimedia.org/wiki/File:Modern_bathroom_design_with_wooden_accents_and_glass_shower_enclosure.jpg",
     "ratio": 1.498
   },
-  "sala-5": {
-    "title": "Living room (Unsplash)",
-    "author": "Jarosław Ceborski jarson",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "source": "https://commons.wikimedia.org/wiki/File:Living_room_(Unsplash).jpg",
-    "ratio": 1.498
-  },
-  "alcoba-3": {
-    "title": "Bedroom in a serviced apartment in London",
-    "author": "Mx. Granger",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "source": "https://commons.wikimedia.org/wiki/File:Bedroom_in_a_serviced_apartment_in_London.jpg",
-    "ratio": 1.333
-  },
-  "sala-6": {
-    "title": "Apartment Living Room 1 2018-09-28",
-    "author": "FASTILY",
+  "estudio-1": {
+    "title": "Studio apartment in Finland",
+    "author": "Aaaatu",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Apartment_Living_Room_1_2018-09-28.jpg",
-    "ratio": 1.333
+    "source": "https://commons.wikimedia.org/wiki/File:Studio_apartment_in_Finland.jpg",
+    "ratio": 1.5
+  },
+  "casa-1": {
+    "title": "Modern house view showing living room and outdoor patio area with sliding glass doors",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Modern_house_view_showing_living_room_and_outdoor_patio_area_with_sliding_glass_doors.jpg",
+    "ratio": 1.498
+  },
+  "casa-2": {
+    "title": "Modern house exterior with red roof and landscaped garden under clear blue sky",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Modern_house_exterior_with_red_roof_and_landscaped_garden_under_clear_blue_sky.jpg",
+    "ratio": 1.5
   }
 }

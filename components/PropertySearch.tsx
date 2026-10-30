@@ -5,6 +5,7 @@ import { BARRIOS, type BarrioId } from "@/lib/barrios";
 import { TRM_LABEL } from "@/lib/config";
 import { formatCOPShort } from "@/lib/format";
 import { t, type Lang } from "@/lib/i18n";
+import { useFavorites } from "@/lib/favorites";
 import { PRICE_STEPS, PROPERTIES, type Operation } from "@/lib/properties";
 import { ResultRow } from "./ResultRow";
 
@@ -26,33 +27,50 @@ interface Filters {
 const EMPTY: Filters = { op: "all", barrio: "", pmin: 0, pmax: 0, beds: 0, baths: 0, parking: 0, amin: 0, amax: 0 };
 const AREA_STEPS = [40, 60, 80, 100, 150, 200, 300];
 export const BARRIO_EVENT = "altamira:barrio";
+export const SEARCH_EVENT = "altamira:search";
+export type QuickSearchDetail = { op: Operation; barrio: "" | BarrioId; pmax: number };
 
 export function PropertySearch({ lang }: { lang: Lang }) {
   const d = t(lang).search;
   const [f, setF] = useState<Filters>(EMPTY);
   const [sort, setSort] = useState<Sort>("relevance");
   const [panelOpen, setPanelOpen] = useState(false);
+  const [onlyFavs, setOnlyFavs] = useState(false);
+  const { favorites } = useFavorites();
 
   // Filtros desde la URL (?op=venta&barrio=chico) y desde los paneles de barrios.
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const barrio = params.get("barrio") as BarrioId | null;
-    const op = params.get("op") as Op | null;
-    if ((barrio && BARRIOS.some((b) => b.id === barrio)) || op === "venta" || op === "arriendo") {
+    const barrioParam = params.get("barrio") as BarrioId | null;
+    const opParam = params.get("op");
+    const pmaxParam = Number(params.get("pmax")) || 0;
+    const barrio = barrioParam && BARRIOS.some((b) => b.id === barrioParam) ? barrioParam : null;
+    const op = opParam === "venta" || opParam === "arriendo" ? opParam : null;
+    if (barrio || op) {
       // Se aplica tras la hidratación para que el HTML estático muestre todo el inventario.
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setF((prev) => ({
         ...prev,
-        barrio: barrio && BARRIOS.some((b) => b.id === barrio) ? barrio : prev.barrio,
-        op: op === "venta" || op === "arriendo" ? op : prev.op,
+        barrio: barrio ?? prev.barrio,
+        op: op ?? prev.op,
+        pmax: op && PRICE_STEPS[op].includes(pmaxParam) ? pmaxParam : prev.pmax,
       }));
     }
     const onBarrio = (e: Event) => {
       const id = (e as CustomEvent<BarrioId>).detail;
       setF((prev) => ({ ...prev, barrio: id }));
     };
+    const onSearch = (e: Event) => {
+      const { op, barrio, pmax } = (e as CustomEvent<QuickSearchDetail>).detail;
+      setOnlyFavs(false);
+      setF({ ...EMPTY, op, barrio, pmax });
+    };
     window.addEventListener(BARRIO_EVENT, onBarrio);
-    return () => window.removeEventListener(BARRIO_EVENT, onBarrio);
+    window.addEventListener(SEARCH_EVENT, onSearch);
+    return () => {
+      window.removeEventListener(BARRIO_EVENT, onBarrio);
+      window.removeEventListener(SEARCH_EVENT, onSearch);
+    };
   }, []);
 
   const set = <K extends keyof Filters>(key: K, value: Filters[K]) =>
@@ -69,6 +87,7 @@ export function PropertySearch({ lang }: { lang: Lang }) {
   const results = useMemo(() => {
     const list = PROPERTIES.filter(
       (p) =>
+        (!onlyFavs || favorites.includes(p.code)) &&
         (f.op === "all" || p.operation === f.op) &&
         (!f.barrio || p.barrio === f.barrio) &&
         (!f.pmin || p.price >= f.pmin) &&
@@ -85,7 +104,7 @@ export function PropertySearch({ lang }: { lang: Lang }) {
     if (sort === "areaAsc") sorted.sort((a, b) => a.area - b.area);
     if (sort === "areaDesc") sorted.sort((a, b) => b.area - a.area);
     return sorted;
-  }, [f, sort]);
+  }, [f, sort, onlyFavs, favorites]);
 
   const activeCount = (Object.keys(EMPTY) as (keyof Filters)[]).filter((k) => k !== "op" && f[k] !== EMPTY[k]).length;
   const priceSteps = f.op === "all" ? [] : PRICE_STEPS[f.op];
@@ -222,8 +241,31 @@ export function PropertySearch({ lang }: { lang: Lang }) {
               ))}
             </select>
           </label>
-          {(activeCount > 0 || f.op !== "all") && (
-            <button type="button" className="text-btn" onClick={() => setF(EMPTY)}>
+          <button
+            type="button"
+            className="fav-filter"
+            aria-pressed={onlyFavs}
+            onClick={() => setOnlyFavs((v) => !v)}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.3 4.5 6.9 4.5c2 0 3.4 1.1 5.1 3 1.7-1.9 3.1-3 5.1-3 3.6 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"
+                fill={onlyFavs ? "currentColor" : "none"}
+                stroke="currentColor"
+                strokeWidth="2"
+              />
+            </svg>
+            {d.favorites} ({favorites.length})
+          </button>
+          {(activeCount > 0 || f.op !== "all" || onlyFavs) && (
+            <button
+              type="button"
+              className="text-btn"
+              onClick={() => {
+                setF(EMPTY);
+                setOnlyFavs(false);
+              }}
+            >
               {d.reset}
             </button>
           )}
@@ -238,7 +280,7 @@ export function PropertySearch({ lang }: { lang: Lang }) {
             ))}
           </ul>
         ) : (
-          <p className="results__empty">{d.empty}</p>
+          <p className="results__empty">{onlyFavs && favorites.length === 0 ? d.favEmpty : d.empty}</p>
         )}
         <p className="price-note small" style={{ marginTop: 32 }}>
           {d.priceNote} {TRM_LABEL[lang]}.

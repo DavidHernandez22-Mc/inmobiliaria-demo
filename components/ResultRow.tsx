@@ -5,12 +5,13 @@ import { formatCOP, formatUSD } from "@/lib/format";
 import { propertyPath, t, type Lang } from "@/lib/i18n";
 import { photoAlt, photoSrc } from "@/lib/photos";
 import type { Property } from "@/lib/properties";
+import { FavoriteButton } from "./FavoriteButton";
 
 export function ResultRow({ p, lang, headingLevel = 3 }: { p: Property; lang: Lang; headingLevel?: 2 | 3 }) {
   const d = t(lang);
   const Heading = headingLevel === 2 ? "h2" : "h3";
   return (
-    <li>
+    <li className="result-item">
       <Link href={propertyPath(lang, p.code)} className="result">
         <div className="result__photo">
           <Image
@@ -42,6 +43,7 @@ export function ResultRow({ p, lang, headingLevel = 3 }: { p: Property; lang: La
           <span className="result__usd small">{formatUSD(p.price, lang)}</span>
         </p>
       </Link>
+      <FavoriteButton code={p.code} title={p.title[lang]} lang={lang} />
     </li>
   );
 }

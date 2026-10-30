@@ -3,7 +3,7 @@ import path from "node:path";
 import sharp from "sharp";
 
 const root = path.resolve(import.meta.dirname, "..");
-const photo = await sharp(path.join(root, ".cache/photos/cerros.jpg")).resize(1200, 630, { fit: "cover", position: "centre" }).toBuffer();
+const photo = await sharp(path.join(root, ".cache/photos/hero-bogota.jpg")).resize(1200, 630, { fit: "cover", position: "centre" }).toBuffer();
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <rect x="0" y="0" width="1200" height="630" fill="#0a0a0a" fill-opacity="0.38"/>
   <text x="60" y="470" font-family="Georgia, serif" font-size="150" font-weight="600" letter-spacing="-6" fill="#f3f1ec">Altamira</text>
