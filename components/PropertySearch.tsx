@@ -2,12 +2,21 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { BARRIOS, type BarrioId } from "@/lib/barrios";
-import { TRM_LABEL } from "@/lib/config";
-import { formatCOPShort } from "@/lib/format";
+import { DEMO_PREFIX, TRM_LABEL, waLink } from "@/lib/config";
+import { formatCOP, formatCOPShort } from "@/lib/format";
 import { t, type Lang } from "@/lib/i18n";
 import { useFavorites } from "@/lib/favorites";
 import { PRICE_STEPS, PROPERTIES, type Operation } from "@/lib/properties";
+import { WhatsAppIcon } from "./Icons";
 import { ResultRow } from "./ResultRow";
+
+// El mensaje va en español porque lo recibe David.
+function favoritesMessage(codes: string[]) {
+  const lines = PROPERTIES.filter((p) => codes.includes(p.code)).map(
+    (p) => `• ${p.code} – ${p.title.es} – ${formatCOP(p.price, "es")} COP${p.operation === "arriendo" ? " al mes" : ""}`,
+  );
+  return `${DEMO_PREFIX} estos son mis inmuebles favoritos:\n${lines.join("\n")}`;
+}
 
 type Sort = "relevance" | "priceAsc" | "priceDesc" | "areaAsc" | "areaDesc";
 type Op = "all" | Operation;
@@ -273,6 +282,14 @@ export function PropertySearch({ lang }: { lang: Lang }) {
       </form>
 
       <div className="wrap">
+        {onlyFavs && favorites.length > 0 && (
+          <div className="fav-send">
+            <p>{d.sendFavsNote(favorites.length)}</p>
+            <a className="btn btn--wa" href={waLink(favoritesMessage(favorites))} target="_blank" rel="noopener noreferrer">
+              <WhatsAppIcon /> {d.sendFavs}
+            </a>
+          </div>
+        )}
         {results.length > 0 ? (
           <ul className="results">
             {results.map((p) => (

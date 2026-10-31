@@ -24,6 +24,10 @@ export interface Property {
   /** Administración mensual en COP (0 si no aplica). */
   admin: number;
   furnished?: boolean;
+  /** Etiqueta comercial en el listado. */
+  badge?: "nuevo";
+  /** Precio anterior si el inmueble tuvo una rebaja (se muestra tachado). */
+  previousPrice?: number;
   photos: string[];
   title: Record<Lang, string>;
   description: Record<Lang, string>;
@@ -46,7 +50,7 @@ export const PROPERTIES: Property[] = [
     floor: 5,
     age: 12,
     admin: 1_480_000,
-    photos: ["sala-vista", "cocina-isla", "alcoba-lujo", "bano-1", "comedor-madera"],
+    photos: ["sala-terraza", "cocina-isla", "alcoba-lujo", "bano-1", "comedor-madera"],
     title: { es: "Apartamento con terraza en el Chicó", en: "Terrace apartment in El Chicó" },
     description: {
       es: "A dos cuadras del Parque de la 93. Sala comedor con chimenea que abre a una terraza de 24 m², estudio independiente y alcoba principal con vestier y baño completo. Edificio de ladrillo de cinco pisos con portería 24 horas y gimnasio.",
@@ -71,7 +75,7 @@ export const PROPERTIES: Property[] = [
     floor: 9,
     age: 18,
     admin: 3_200_000,
-    photos: ["sala-4", "cocina-2", "alcoba-moderna", "bano-2", "comedor-cocina"],
+    photos: ["terraza-vista", "cocina-2", "alcoba-moderna", "bano-2", "comedor-cocina"],
     title: { es: "Penthouse con vista a los cerros", en: "Penthouse facing the hills" },
     description: {
       es: "Último piso en dos niveles con ventanales de piso a techo hacia los cerros orientales y la ciudad. Cocina abierta con isla, salón de estar familiar, cuatro alcobas con baño propio y terraza privada en el segundo nivel.",
@@ -84,6 +88,7 @@ export const PROPERTIES: Property[] = [
   },
   {
     code: "ALT-1047",
+    previousPrice: 2_950_000_000,
     operation: "venta",
     type: "casa",
     barrio: "usaquen",
@@ -134,6 +139,7 @@ export const PROPERTIES: Property[] = [
   },
   {
     code: "ALT-1068",
+    badge: "nuevo",
     operation: "venta",
     type: "apartamento",
     barrio: "chapinero-alto",
@@ -146,7 +152,7 @@ export const PROPERTIES: Property[] = [
     floor: 11,
     age: 3,
     admin: 780_000,
-    photos: ["cocina-2", "sala-vista", "alcoba-lujo", "bano-2"],
+    photos: ["cocina-2", "sala-5", "alcoba-lujo", "bano-2"],
     title: { es: "Apartamento nuevo en Chapinero Alto", en: "New apartment in Chapinero Alto" },
     description: {
       es: "Edificio de 2023 en ladera, piso once con vista abierta a la sabana. Cocina abierta, dos alcobas con baño y balcón corrido. Terraza comunal con BBQ, coworking y gimnasio. A pasos de la Zona G.",
@@ -247,7 +253,7 @@ export const PROPERTIES: Property[] = [
     floor: 6,
     age: 20,
     admin: 2_300_000,
-    photos: ["comedor-madera", "sala-4", "cocina-isla", "alcoba-lujo", "bano-3"],
+    photos: ["comedor-madera", "sala-gris", "cocina-isla", "alcoba-lujo", "bano-3"],
     title: { es: "Apartamento amplio en Rosales", en: "Spacious apartment in Rosales" },
     description: {
       es: "220 m² en un piso por planta: ascensor que llega directo al apartamento, sala y comedor separados, estudio con biblioteca y tres alcobas con baño. Calle cerrada y arborizada cerca de la Circunvalar.",
@@ -260,6 +266,7 @@ export const PROPERTIES: Property[] = [
   },
   {
     code: "ALT-2027",
+    badge: "nuevo",
     operation: "arriendo",
     type: "apartamento",
     barrio: "chico",
@@ -323,7 +330,7 @@ export const PROPERTIES: Property[] = [
     floor: 8,
     age: 7,
     admin: 620_000,
-    photos: ["cocina-isla", "sala-vista", "alcoba-moderna", "bano-2"],
+    photos: ["cocina-isla", "sala-terraza", "alcoba-moderna", "bano-2"],
     title: { es: "Apartamento con vista, Chapinero Alto", en: "Apartment with a view, Chapinero Alto" },
     description: {
       es: "Ventanales hacia la ciudad desde la sala y la alcoba principal. Cocina en madera con barra, segunda alcoba que funciona como estudio y terraza comunal. Cerca de universidades y de la carrera Séptima.",

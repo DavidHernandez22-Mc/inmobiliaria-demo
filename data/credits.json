@@ -55,22 +55,6 @@
     "source": "https://commons.wikimedia.org/wiki/File:Bogota_-_arboles_parque_Rosales,_avenida_Circunvalar.JPG",
     "ratio": 1.333
   },
-  "sala-vista": {
-    "title": "Cozy living room with a view of the lake and trees in the background at midday",
-    "author": "Shixart1985",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Cozy_living_room_with_a_view_of_the_lake_and_trees_in_the_background_at_midday.jpg",
-    "ratio": 1.498
-  },
-  "sala-4": {
-    "title": "Modern living room with large windows showing view of trees and lake in daylight",
-    "author": "Shixart1985",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Modern_living_room_with_large_windows_showing_view_of_trees_and_lake_in_daylight.jpg",
-    "ratio": 1.498
-  },
   "sala-gris": {
     "title": "Cozy living room with a gray sofa",
     "author": "Shixart1985",
@@ -238,5 +222,21 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Modern_house_exterior_with_red_roof_and_landscaped_garden_under_clear_blue_sky.jpg",
     "ratio": 1.5
+  },
+  "sala-terraza": {
+    "title": "The-Dupont-Circle-Hotel-Washington-Signature-Terrace-Suite",
+    "author": "Dupont Circle Hotel",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:The-Dupont-Circle-Hotel-Washington-Signature-Terrace-Suite.jpg",
+    "ratio": 1.499
+  },
+  "terraza-vista": {
+    "title": "Caracas skyline and Avila mountain from my penthouse",
+    "author": "Flauta",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Caracas_skyline_and_Avila_mountain_from_my_penthouse.JPG",
+    "ratio": 1.333
   }
 }

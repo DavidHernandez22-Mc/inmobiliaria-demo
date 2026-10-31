@@ -36,6 +36,12 @@ export function ResultRow({ p, lang, headingLevel = 3 }: { p: Property; lang: La
           <span>{d.search.stratum(p.stratum)}</span>
         </p>
         <p className="result__price">
+          {p.previousPrice && (
+            <span className="price-before">
+              <span className="sr-only">{d.search.before}: </span>
+              {formatCOP(p.previousPrice, lang)}
+            </span>
+          )}
           <span className="result__cop">
             {formatCOP(p.price, lang)}
             {p.operation === "arriendo" && <span className="small muted"> {d.search.perMonth}</span>}
@@ -44,6 +50,12 @@ export function ResultRow({ p, lang, headingLevel = 3 }: { p: Property; lang: La
         </p>
       </Link>
       <FavoriteButton code={p.code} title={p.title[lang]} lang={lang} />
+      {(p.badge || p.previousPrice) && (
+        <span className="result__badges">
+          {p.badge === "nuevo" && <span className="tag tag--nuevo">{d.search.badgeNew}</span>}
+          {p.previousPrice && <span className="tag tag--rebajado">{d.search.badgeReduced}</span>}
+        </span>
+      )}
     </li>
   );
 }

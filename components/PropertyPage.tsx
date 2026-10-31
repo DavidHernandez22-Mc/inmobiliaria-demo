@@ -74,12 +74,19 @@ export function PropertyPage({ p, lang }: { p: Property; lang: Lang }) {
           <h1>{p.title[lang]}</h1>
           <p className="prop-head__meta small">
             <span className={`tag tag--${p.operation}`}>{isSale ? dp.forSale : dp.forRent}</span>
+            {p.badge === "nuevo" && <span className="tag tag--nuevo">{d.search.badgeNew}</span>}
+            {p.previousPrice && <span className="tag tag--rebajado">{d.search.badgeReduced}</span>}
             <span>
               {dp.types[p.type]} · {barrio.name}, Bogotá · {p.code}
             </span>
           </p>
         </div>
         <div className="prop-head__price">
+          {p.previousPrice && (
+            <span className="price-before">
+              {d.search.before}: {formatCOP(p.previousPrice, lang)}
+            </span>
+          )}
           <strong>{priceLabel}</strong>
           <span className="small muted">
             {formatUSD(p.price, lang)} · {TRM_LABEL[lang]}
