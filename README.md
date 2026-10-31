@@ -2,7 +2,7 @@
 
 Sitio de demostración de una inmobiliaria ficticia en Bogotá (Chicó, Rosales, Usaquén, Cedritos, Chapinero Alto y Salitre), hecho para un portafolio de diseño web.
 
-**URL:** https://inmobiliaria1david.netlify.app
+**URL:** https://altamira-demo.vercel.app
 
 ## Qué incluye
 
