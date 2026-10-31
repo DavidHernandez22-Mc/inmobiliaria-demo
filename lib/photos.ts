@@ -28,8 +28,6 @@ export const PHOTO_ALT: Record<string, Record<Lang, string>> = {
   salitre: { es: "Edificio en Ciudad Salitre", en: "Apartment building in Ciudad Salitre" },
   cedritos: { es: "Calle del barrio Cedritos", en: "Street in Cedritos" },
   rosales: { es: "Parque Rosales junto a la Circunvalar", en: "Parque Rosales by the Circunvalar" },
-  "sala-terraza": { es: "Sala con ventanal hacia una terraza urbana con vista a la ciudad", en: "Living room opening onto an urban terrace with city views" },
-  "terraza-vista": { es: "Vista urbana desde una terraza en altura con montañas al fondo", en: "City view from a high terrace with mountains behind" },
   "sala-gris": { es: "Sala con sofá gris en L y mesa de centro", en: "Living room with grey corner sofa and coffee table" },
   "sala-2": { es: "Sala y cocina abierta con ventanal hacia la terraza", en: "Living room and open kitchen with sliding doors to the terrace" },
   "sala-5": { es: "Sala luminosa con piso de madera en espina de pez", en: "Bright living room with herringbone wood floor" },
@@ -39,6 +37,7 @@ export const PHOTO_ALT: Record<string, Record<Lang, string>> = {
   "cocina-5": { es: "Cocina blanca con luz natural", en: "White kitchen with natural light" },
   "cocina-1": { es: "Cocina blanca con barra", en: "White kitchen with breakfast bar" },
   "comedor-cocina": { es: "Cocina blanca y comedor en un espacio luminoso", en: "White kitchen and dining area in a bright space" },
+  "comedor-gris": { es: "Cocina abierta y comedor amplio con luz natural", en: "Open kitchen and large dining area with natural light" },
   "comedor-madera": { es: "Comedor con mesa de madera y sillas tapizadas", en: "Dining area with wooden table and upholstered chairs" },
   "alcoba-lujo": { es: "Alcoba principal con cabecero tapizado y tonos neutros", en: "Main bedroom with upholstered headboard in neutral tones" },
   "alcoba-hotel": { es: "Alcoba amoblada con cama doble y escritorio", en: "Furnished bedroom with double bed and desk" },
@@ -50,7 +49,6 @@ export const PHOTO_ALT: Record<string, Record<Lang, string>> = {
   "bano-3": { es: "Baño con enchape de madera y ducha en vidrio", en: "Bathroom with wood panelling and glass shower" },
   "estudio-1": { es: "Apartaestudio luminoso con plantas y ventanal", en: "Bright studio with plants and a large window" },
   "casa-1": { es: "Casa con sala abierta hacia el patio", en: "House with living room opening onto the patio" },
-  "casa-2": { es: "Casa de una planta con jardín al frente", en: "Single-storey house with a front garden" },
 };
 
 export const photoAlt = (slug: string, lang: Lang) => PHOTO_ALT[slug]?.[lang] ?? "";
