@@ -2457,3 +2457,43 @@ body:has(.cta-bar) .wa-float {
     width: 100%;
   }
 }
+
+/* ==========================================================================
+   Carril del botón flotante (768 px o más): el contenido termina antes del
+   carril derecho, así el botón de WhatsApp nunca toca textos, botones,
+   tarjetas ni fotos de contenido al hacer scroll.
+   ========================================================================== */
+@media (min-width: 768px) {
+  :root {
+    --rail: 104px;
+  }
+  .wa-float {
+    right: 24px;
+    bottom: 24px;
+    width: 56px;
+    height: 56px;
+  }
+  .wrap,
+  .barrios__head,
+  .barrios__caption,
+  .voices,
+  .prop-crumb,
+  .prop-head,
+  .gallery,
+  .gallery-note,
+  .prop-body,
+  .similar,
+  .site-footer {
+    padding-right: var(--rail);
+  }
+  .hero__card {
+    margin-right: calc(var(--rail) - var(--margin));
+  }
+  .band {
+    margin-left: var(--margin);
+    margin-right: var(--rail);
+  }
+  .footer__name {
+    overflow: hidden;
+  }
+}
