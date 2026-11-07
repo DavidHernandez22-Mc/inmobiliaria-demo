@@ -2,7 +2,7 @@
 
 import { useId, useState } from "react";
 import { BARRIOS } from "@/lib/barrios";
-import { DEMO_PREFIX, waLink } from "@/lib/config";
+import { DEMO_PREFIX, PRIVACY_URL, waLink } from "@/lib/config";
 import { formatCOP, formatNumber } from "@/lib/format";
 import { t, type Lang } from "@/lib/i18n";
 
@@ -179,6 +179,13 @@ export function OwnersForm({ lang }: { lang: Lang }) {
         {d.submit}
       </button>
       <p className="owners__note small">{d.note}</p>
+      <p className="owners__note small">
+        {d.privacyBefore}
+        <a className="link" href={PRIVACY_URL} target="_blank" rel="noopener noreferrer" hrefLang="es">
+          {d.privacyLink}
+        </a>
+        {d.privacyAfter}
+      </p>
     </form>
   );
 }

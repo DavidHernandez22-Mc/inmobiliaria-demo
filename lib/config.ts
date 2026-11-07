@@ -5,6 +5,7 @@ export const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "57300
 export const SITE_URL = "https://altamira-demo.vercel.app";
 export const SITE_NAME = "Altamira Propiedades";
 export const DEMO_AUTHOR = "David";
+export const PRIVACY_URL = "https://david-web.castrod2207.workers.dev/privacidad/";
 
 // TRM de referencia para mostrar precios aproximados en USD.
 export const TRM = 3160;

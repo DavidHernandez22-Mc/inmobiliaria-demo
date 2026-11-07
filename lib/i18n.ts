@@ -141,6 +141,10 @@ const es = {
       phone: "Celular o correo",
       submit: "Enviar por WhatsApp",
       note: "Al enviar se abre WhatsApp con tus datos ya escritos. Este sitio no guarda nada.",
+      privacyBefore:
+        "Este sitio es una demostración. Si me escribes, tus datos los recibe David Hernández para responderte, según su ",
+      privacyLink: "política de privacidad",
+      privacyAfter: ".",
       required: "Completa este campo",
       invalidArea: "Escribe un área entre 15 y 5.000 m²",
       invalidPrice: "Escribe un precio válido",
@@ -405,6 +409,10 @@ const en: Dict = {
       phone: "Mobile or email",
       submit: "Send via WhatsApp",
       note: "Sending opens WhatsApp with your details filled in. This site stores nothing.",
+      privacyBefore:
+        "This site is a demo. If you message me, your details are received by David Hernández in order to reply to you, in line with the ",
+      privacyLink: "privacy policy",
+      privacyAfter: ".",
       required: "Please fill in this field",
       invalidArea: "Enter an area between 15 and 5,000 m²",
       invalidPrice: "Enter a valid price",
