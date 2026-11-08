@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Sitio 100 % estático: Workers solo sirve los archivos de "out" (next build con output: "export").
+  "name": "inmobiliaria-demo",
+  "compatibility_date": "2026-10-15",
+  "workers_dev": true,
+  "assets": {
+    "directory": "out",
+    "not_found_handling": "404-page"
+  }
+}

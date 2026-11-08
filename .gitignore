@@ -43,3 +43,6 @@ next-env.d.ts
 # fotos originales descargadas por scripts/build-images.mjs
 /.cache
 /.taste-skill
+
+# Cloudflare Wrangler (local)
+/.wrangler
