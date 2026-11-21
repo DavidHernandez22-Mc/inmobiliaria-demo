@@ -27,7 +27,7 @@ npm run dev
 
 ## Configuración
 
-- **Número de WhatsApp:** `lib/config.ts` (573008564773). Se puede sobrescribir con la variable de entorno `NEXT_PUBLIC_WHATSAPP_NUMBER`.
+- **Número de WhatsApp:** `lib/config.ts` (573244281553). Se puede sobrescribir con la variable de entorno `NEXT_PUBLIC_WHATSAPP_NUMBER`.
 - **TRM de referencia:** `lib/config.ts`.
 - **Inmuebles:** `lib/properties.ts`. **Barrios:** `lib/barrios.ts`. **Textos ES/EN:** `lib/i18n.ts`.
 

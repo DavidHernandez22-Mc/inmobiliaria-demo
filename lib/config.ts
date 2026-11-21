@@ -1,6 +1,6 @@
 // Configuración central de la demo.
 // Número de WhatsApp en formato internacional, solo dígitos. Se puede sobrescribir con NEXT_PUBLIC_WHATSAPP_NUMBER.
-export const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573008564773";
+export const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573244281553";
 
 export const SITE_URL = "https://inmobiliaria.davidhcwebs.com";
 export const SITE_NAME = "Altamira Propiedades";
