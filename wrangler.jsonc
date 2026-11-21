@@ -3,9 +3,15 @@
   // Sitio 100 % estático: Workers solo sirve los archivos de "out" (next build con output: "export").
   "name": "inmobiliaria-demo",
   "compatibility_date": "2026-10-15",
+  "main": "worker/index.mjs",
   "workers_dev": true,
+  // Dominio propio; la dirección de workers.dev redirige con 301 (worker/index.mjs).
+  "routes": [{ "pattern": "inmobiliaria.davidhcwebs.com", "custom_domain": true }],
   "assets": {
     "directory": "out",
+    "binding": "ASSETS",
+    // Todo pasa por worker/index.mjs para redirigir workers.dev al dominio propio.
+    "run_worker_first": true,
     "not_found_handling": "404-page"
   }
 }

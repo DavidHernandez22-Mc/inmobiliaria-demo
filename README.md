@@ -2,7 +2,7 @@
 
 Sitio de demostración de una inmobiliaria ficticia en Bogotá (Chicó, Rosales, Usaquén, Cedritos, Chapinero Alto y Salitre), hecho para un portafolio de diseño web.
 
-**URL:** https://altamira-demo.vercel.app
+**URL:** https://inmobiliaria.davidhcwebs.com (Cloudflare Workers, Worker `inmobiliaria-demo`; `inmobiliaria-demo.castrod2207.workers.dev` redirige con 301)
 
 ## Qué incluye
 
